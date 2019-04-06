@@ -14,7 +14,7 @@ const client = new ApolloClient({
         return statusCode >= 200 && statusCode < 300;
       },
       text: () => {
-        return Promise.resolve(JSON.stringify(data.data));
+        return Promise.resolve(JSON.stringify(data));
       }
     }
   })
